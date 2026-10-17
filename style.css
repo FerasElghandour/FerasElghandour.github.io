@@ -15,3 +15,7 @@
 @media(max-width:900px){.case-facts{grid-template-columns:1fr 1fr}.case-workflow ol{grid-template-columns:1fr 1fr}.case-facts div:last-child{grid-column:1/-1}}
 @media(max-width:760px){.case-outcome{padding:23px}.case-hero h1{font-size:clamp(36px,8vw,55px)}.case-facts{grid-template-columns:1fr;gap:20px}.case-facts div:last-child{grid-column:auto}.case-detail,.case-results li{grid-template-columns:1fr;gap:12px}.case-context aside{padding-top:0}.case-detail h3{max-width:none}.case-workflow ol{grid-template-columns:1fr;gap:20px}.case-workflow li{display:grid;grid-template-columns:30px 1fr;gap:16px}.step-number{margin:0}}
 @media print{.case-evidence{display:block}.case-outcome{background:transparent;border:1px solid var(--line)}.case-workflow li,.case-detail,.case-results li{break-inside:avoid}}
+
+
+/* Homepage identity: keep the two specialties together on wide screens. */
+.portfolio-hero h1{max-width:24ch}
