@@ -1,6 +1,6 @@
 # Feras Elghandour | AI Research Engineer | Deep Learning & Autonomous Systems
 
-Model training, deep learning, generative AI, reinforcement learning and autonomous systems. Six featured projects lead the portfolio, followed by three anonymized client engagements. Repositories distinguish independent research, coursework and engineering prototypes.
+Model training, deep learning, generative AI, reinforcement learning and autonomous systems. Six featured projects lead the portfolio, followed by three anonymized client engagements. Project documentation identifies methods, contributions, available artifacts and reproducibility limits.
 
 [Open the portfolio](https://feraselghandour.github.io/) · [LinkedIn](https://www.linkedin.com/in/feras-elghandour/)
 
