@@ -28,3 +28,9 @@ Figure context:
 The mobile SVGs replot the same recorded VAE, fusion, maintenance and braking values with larger labels. capacity-overview-mobile.svg summarizes the documented 14/16 balanced-over-random and 5/16 balanced-over-corrected-compute-dense comparison counts; the original four-panel accuracy figure remains linked.
 
 tennis-results.svg and tennis-results-mobile.svg replace the overview preview with separate training and saved-policy evaluation panels. Sources: [training_scores.csv](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/training_scores.csv), [evaluation_scores.csv](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/evaluation_scores.csv) and [training_result.json](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/training_result.json). Training: full-window rolling mean for 875 episodes. Saved checkpoint: episode 634, rolling mean 0.5338000080175698. Evaluation: 100 episodes, mean 2.0670000308007004, learning and exploration off. The panels deliberately use separately labeled y-axis scales. No retraining was performed.
+
+## Mechanism schematics
+
+topology-comparison.svg and its mobile variant are generated from run_grid.topology(8, kind, 0): balanced depth 3, random depth 4, skewed depth 7. They depict feature-group encoders, concatenating merge blocks and the classifier, not experimental outcomes. Feature dimensions vary; Satimage uses nine groups.
+
+shared-policy-mechanism.svg and its mobile variant describe the implemented Actor, Critic and MADDPGAgent classes: shared local actor/critic/replay, 128-transition minibatches and soft target updates with tau 0.01. They do not depict a centralized critic or claim an environment rollout. The runnable examples use explicitly generated inputs.

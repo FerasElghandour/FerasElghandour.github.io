@@ -53,3 +53,13 @@
 .figure-hint{white-space:nowrap}
 @media(max-width:760px){.wide-chart-note{display:none}.narrow-chart-note{display:inline}.project-figure figcaption{font-size:14px;line-height:1.6}.project-figure>a{min-height:44px}.project-links a,.nav-links a{min-height:44px;box-sizing:border-box}.project-figure figcaption a{display:inline-block;padding:6px 0}.project-figure img{border:0}}
 @media(max-width:760px){.visual-hero h1{font-size:38px}.model-schematic{overflow-x:auto}.model-schematic>a{min-width:680px}.model-schematic figcaption{text-align:left;max-width:38ch}}
+
+.project-index{display:flex;gap:8px 24px;flex-wrap:wrap;padding:0 0 24px;font-size:13px}
+.project-index a{padding:8px 0;text-decoration:none;border-bottom:1px solid var(--line)}
+.project-index a:hover{border-color:var(--accent)}
+.mechanism-details{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px}
+.mechanism-details summary{cursor:pointer;font-size:15px;font-weight:650;padding:8px 0;color:var(--accent)}
+.mechanism-details figure{margin:20px 0 0}
+.mechanism-details img{display:block;width:100%;height:auto}
+.mechanism-details figcaption{font-size:13px;color:var(--muted);max-width:85ch;margin:12px 0 0}
+@media(max-width:760px){.project-index{gap:4px 20px}.project-index a{min-height:44px;box-sizing:border-box}.mechanism-details summary{font-size:16px;min-height:44px;box-sizing:border-box}.mechanism-details figcaption{font-size:14px}}
