@@ -1,0 +1,51 @@
+/* Visual research portfolio. Existing client report styles remain in style.css. */
+.portfolio-page{font-size:1rem;line-height:1.65}
+.portfolio-page header,.portfolio-page main,.portfolio-page footer{width:min(1248px,calc(100% - 80px))}
+.portfolio-page nav{align-items:center;padding:24px 0;gap:24px}
+.wordmark{font-size:18px;font-weight:700;text-decoration:none;letter-spacing:-.02em}
+.wordmark span{display:block;font-size:12px;font-weight:400;letter-spacing:.025em;color:var(--muted);margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-size:14px}
+.nav-links a{text-decoration:none;padding:10px 0}
+.nav-links a:hover{text-decoration:underline}
+.visual-hero{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;padding:64px 0 56px;align-items:center}
+.visual-hero .eyebrow{max-width:50ch;font-size:11px;letter-spacing:.10em}
+.visual-hero h1{font-size:clamp(40px,4.8vw,66px);line-height:1.06;max-width:18ch;margin:20px 0 0;letter-spacing:-.045em;text-wrap:balance}
+.hero-summary{padding-top:24px;max-width:49ch}
+.hero-summary>p:first-child{font-size:21px;line-height:1.5;margin:0 0 14px}
+.hero-summary .secondary{color:var(--muted);margin:0 0 20px}
+.text-action{font-weight:650;text-decoration:none;border-bottom:1px solid currentColor;padding:6px 0;display:inline-block}
+.work-heading{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0}
+.work-heading p{margin:0}.work-heading>p:last-child{color:var(--muted);font-size:14px}
+.project{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:48px;padding:56px 0;border-top:1px solid var(--line);align-items:center;scroll-margin-top:24px}
+.lead-project{padding-top:24px;border-top:0;align-items:start}
+.project-copy{max-width:50ch}.project-copy h2{font-size:clamp(27px,2.7vw,38px);line-height:1.14;text-wrap:balance;margin-bottom:14px;max-width:22ch}
+.project-copy .eyebrow{font-size:11px;margin:0 0 20px}
+.project-name{font-size:14px;color:var(--muted);margin:0 0 24px}
+.project-copy>p:not(.eyebrow):not(.project-name):not(.project-kind){margin-bottom:18px}
+.finding{font-size:15px;line-height:1.65}.finding strong{color:var(--accent)}
+.project-links{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap;font-size:14px;margin-top:24px}
+.project-kind{font-size:12px;color:var(--muted);margin:18px 0 0}
+.project-figure{margin:0;min-width:0}.project-figure>a{display:block;background:var(--paper)}
+.project-figure img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.project-figure figcaption,.supplement figcaption{font-size:12px;line-height:1.6;color:var(--muted);max-width:85ch;margin:12px 0 0}
+.project-figure a:hover img{border-color:var(--accent)}
+.supplement{grid-column:1/-1;margin:0;border-top:1px solid var(--line);padding-top:28px}
+.supplement>img{display:block;width:100%;max-width:1040px;margin:auto}
+.supplement figcaption{margin:16px auto 0;text-align:center}
+.simulation-frame{display:grid;grid-template-columns:1.35fr .85fr;gap:48px;align-items:center}
+.simulation-frame img{display:block;max-height:400px;object-fit:contain;width:100%;height:auto}
+.simulation-frame figcaption{margin:0;text-align:left;max-width:40ch;font-size:14px}
+.portfolio-page #approach{padding:64px 0;grid-template-columns:1.35fr .85fr;gap:64px}
+.portfolio-page #approach h2{font-size:34px}
+.portfolio-page #client-work{padding:56px 0}
+.portfolio-page #client-work h2{font-size:30px}
+.portfolio-page #client-work .row h3{font-size:20px}
+.contact-strip{display:flex;justify-content:space-between;gap:40px;align-items:center;padding:56px 0}
+.contact-strip p{max-width:64ch}.contact-strip .button{white-space:nowrap}
+.portfolio-page footer{font-size:12px;line-height:1.8}
+@media(max-width:1000px){.visual-hero{gap:36px}.project{gap:32px;grid-template-columns:1fr 1.2fr}.nav-links{gap:20px}.project-copy h2{font-size:29px}}
+@media(max-width:760px){.portfolio-page header,.portfolio-page main,.portfolio-page footer{width:calc(100% - 36px)}.portfolio-page nav{gap:12px}.nav-links{gap:20px;font-size:13px}.visual-hero{grid-template-columns:1fr;gap:20px;padding:36px 0}.visual-hero h1{font-size:44px}.hero-summary{padding-top:0}.hero-summary>p:first-child{font-size:18px}.work-heading{align-items:start;gap:12px;flex-direction:column}.project{grid-template-columns:1fr;gap:24px;padding:36px 0}.lead-project{padding-top:16px}.project-copy{max-width:none}.project-copy h2{font-size:32px;max-width:23ch}.project-name{margin-bottom:16px}.project-figure figcaption{font-size:12px}.project-links{margin-top:16px}.simulation-frame{grid-template-columns:1fr;gap:16px}.simulation-frame img{max-height:none}.simulation-frame figcaption{max-width:none}.portfolio-page #approach{grid-template-columns:1fr;gap:28px;padding:40px 0}.contact-strip{flex-direction:column;align-items:start;padding:40px 0}.supplement{padding-top:18px;overflow:hidden}.supplement figcaption{text-align:left}.portfolio-page #client-work{padding:40px 0}}
+@media print{.visual-hero{padding:20px 0}.project{break-inside:avoid}.project-figure img{max-height:350px;object-fit:contain}}
+
+.model-schematic>a{display:block;max-width:1040px;margin:auto}.model-schematic img{width:100%;display:block}
+@media(max-width:760px){.visual-hero h1{font-size:38px}.model-schematic{overflow-x:auto}.model-schematic>a{min-width:680px}.model-schematic figcaption{text-align:left;max-width:38ch}}
