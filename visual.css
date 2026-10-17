@@ -48,4 +48,8 @@
 @media print{.visual-hero{padding:20px 0}.project{break-inside:avoid}.project-figure img{max-height:350px;object-fit:contain}}
 
 .model-schematic>a{display:block;max-width:1040px;margin:auto}.model-schematic img{width:100%;display:block}
+.project-figure picture{display:block}
+.narrow-chart-note{display:none}
+.figure-hint{white-space:nowrap}
+@media(max-width:760px){.wide-chart-note{display:none}.narrow-chart-note{display:inline}.project-figure figcaption{font-size:14px;line-height:1.6}.project-figure>a{min-height:44px}.project-links a,.nav-links a{min-height:44px;box-sizing:border-box}.project-figure figcaption a{display:inline-block;padding:6px 0}.project-figure img{border:0}}
 @media(max-width:760px){.visual-hero h1{font-size:38px}.model-schematic{overflow-x:auto}.model-schematic>a{min-width:680px}.model-schematic figcaption{text-align:left;max-width:38ch}}

@@ -22,3 +22,9 @@ Figure context:
 - Fusion: mean F1 over three recorded seeds, 1,000 synthetic missions per seed. Dots are individual seed values.
 - Maintenance: 29 timely warnings, one early intervention, five missed observed windows, 65 histories censored before the danger window. The 45% threshold was selected on validation. These are observed-window outcomes, not eventual failure coverage.
 
+
+## Mobile layouts and Tennis clarification
+
+The mobile SVGs replot the same recorded VAE, fusion, maintenance and braking values with larger labels. capacity-overview-mobile.svg summarizes the documented 14/16 balanced-over-random and 5/16 balanced-over-corrected-compute-dense comparison counts; the original four-panel accuracy figure remains linked.
+
+tennis-results.svg and tennis-results-mobile.svg replace the overview preview with separate training and saved-policy evaluation panels. Sources: [training_scores.csv](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/training_scores.csv), [evaluation_scores.csv](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/evaluation_scores.csv) and [training_result.json](https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/main/run-seed-0/training_result.json). Training: full-window rolling mean for 875 episodes. Saved checkpoint: episode 634, rolling mean 0.5338000080175698. Evaluation: 100 episodes, mean 2.0670000308007004, learning and exploration off. The panels deliberately use separately labeled y-axis scales. No retraining was performed.
