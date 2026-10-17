@@ -1,8 +1,16 @@
 # Feras Elghandour | Applied AI & Decision Systems
 
-A focused portfolio of six technical case studies, with interactive demonstrations and reproducible implementations.
+A portfolio of three anonymized client engagements and six selected technical implementations, with interactive demonstrations and reproducible engineering.
 
 [Open the portfolio](https://feraselghandour.github.io/) · [LinkedIn](https://www.linkedin.com/in/feras-elghandour/)
+
+## Client work
+
+- [Acquisition Economics & Profitability](case-studies/profitability-diagnostic/)
+- [Commercial Systems & Sales Enablement](case-studies/commercial-enablement/)
+- [Commerce Delivery & Release QA](case-studies/commerce-delivery/)
+
+Client narratives distinguish personal contribution, team delivery, observed outcomes and subsequent work. Raw correspondence, account data and internal financial records are excluded.
 
 ## Run locally
 
