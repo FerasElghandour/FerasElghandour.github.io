@@ -63,3 +63,7 @@
 .mechanism-details img{display:block;width:100%;height:auto}
 .mechanism-details figcaption{font-size:13px;color:var(--muted);max-width:85ch;margin:12px 0 0}
 @media(max-width:760px){.project-index{gap:4px 20px}.project-index a{min-height:44px;box-sizing:border-box}.mechanism-details summary{font-size:16px;min-height:44px;box-sizing:border-box}.mechanism-details figcaption{font-size:14px}}
+
+/* Actual cGAN samples, kept legible without altering the recorded image. */
+.generative-samples>a{display:flex;justify-content:center}
+.generative-samples img{width:min(100%,440px);height:auto}

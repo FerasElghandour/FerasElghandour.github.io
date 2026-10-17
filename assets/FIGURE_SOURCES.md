@@ -34,3 +34,11 @@ tennis-results.svg and tennis-results-mobile.svg replace the overview preview wi
 topology-comparison.svg and its mobile variant are generated from run_grid.topology(8, kind, 0): balanced depth 3, random depth 4, skewed depth 7. They depict feature-group encoders, concatenating merge blocks and the classifier, not experimental outcomes. Feature dimensions vary; Satimage uses nine groups.
 
 shared-policy-mechanism.svg and its mobile variant describe the implemented Actor, Critic and MADDPGAgent classes: shared local actor/critic/replay, 128-transition minibatches and soft target updates with tau 0.01. They do not depict a centralized critic or claim an environment rollout. The runnable examples use explicitly generated inputs.
+
+## Featured generative training update
+
+- **cgan-fresh-samples.png:** unmodified [fresh cGAN sample grid](https://github.com/FerasElghandour/conditional-handwriting-generation/blob/ed98aae1b23b88288002d21ef21f443b814435c5/results/fresh-cgan/grid.png). Generator: original MLP cGAN, 50 fresh epochs, seed 42. Preview: 100 samples, seed 42, class labels 0–9 repeated across each row. The Git blob SHA is 28e7b52664a9c1bb021dc8eba8960bff211830f8.
+- **93.28%:** [fresh utility record](https://github.com/FerasElghandour/conditional-handwriting-generation/blob/ed98aae1b23b88288002d21ef21f443b814435c5/results/fresh-cgan/utility.json): 9,328/10,000 real MNIST test images classified correctly by a CNN trained only on 10,000 synthetic images for 20 epochs, classifier seed 2026. This is classifier utility, not a generator classification score.
+- **cgan-training.svg / cgan-training-mobile.svg:** new implementation and evaluation schematics, based on the [training protocol](https://github.com/FerasElghandour/conditional-handwriting-generation/blob/ed98aae1b23b88288002d21ef21f443b814435c5/results/fresh-cgan/protocol.json) and MLP generator/discriminator source. G dimensions: 110→128→256→512→784; D dimensions: 794→512→256→1. A class embedding supplies 10 values. These are schematics, not experiment measurements.
+
+The existing VAE figures and their provenance remain available. The featured slot now presents the fresh cGAN result. This presentation update does not retrain models, remeasure FID, establish multi-seed reliability, or imply a completed fresh DDPM run.
