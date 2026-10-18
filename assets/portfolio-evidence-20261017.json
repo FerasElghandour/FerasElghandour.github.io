@@ -3,8 +3,8 @@
   "source_commits": {
     "capacity": "aab76bfeb9a42eab6312d5c3f008c4d41a56029a",
     "generative": "df3e83573328ac64f9b97ffea683a1939eb8e778",
-    "tennis": "560695353c5faa20225ec81ccf2f8aee1d931085",
-    "braking": "80d0b38943ed502d697479142b521aaef65ad685",
+    "tennis": "68ac19549f21a906783c5bffb2561002621b97bc",
+    "braking": "916b4cf760a541e1c9f67645fb464d0cb91e7816",
     "composition": "b31b8f04089f54c91e40506e45dfdff7ccac34e6"
   },
   "capacity_primary_family": {
@@ -101,7 +101,15 @@
       ]
     }
   },
-  "tennis_final_test": {
+  "composition": {
+    "conditions": 9,
+    "seeds": 5,
+    "balanced_staged_ood_pct": 4.4,
+    "left_staged_ood_pct": 42.1,
+    "known_algebra_ood_pct": 100.0
+  },
+  "scope": "New local M2 Max Tennis and braking experiments. Other project observations are previously published; older studies remain separate.",
+  "tennis_final_test_v1": {
     "exploration": {
       "mean": 0.7292666775360703,
       "sample_sd": 1.2631269377594225,
@@ -139,12 +147,193 @@
       ]
     }
   },
-  "composition": {
-    "conditions": 9,
-    "seeds": 5,
-    "balanced_staged_ood_pct": 4.4,
-    "left_staged_ood_pct": 42.1,
-    "known_algebra_ood_pct": 100.0
+  "tennis_robust_v2": {
+    "pass": true,
+    "errors": [],
+    "training_runs": 10,
+    "training_steps": 400000,
+    "final_episodes": 2000,
+    "summary": {
+      "ddpg_exploration": {
+        "per_seed": [
+          {
+            "seed": 104729,
+            "mean": 2.201000032797456,
+            "median_episode_score": 2.600000038743019,
+            "episodes": 100
+          },
+          {
+            "seed": 130363,
+            "mean": 0.1260000019520521,
+            "median_episode_score": 0.10000000149011612,
+            "episodes": 100
+          },
+          {
+            "seed": 155921,
+            "mean": 0.04080000068992376,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 181081,
+            "mean": 0.7344000110961497,
+            "median_episode_score": 0.3950000060722232,
+            "episodes": 100
+          },
+          {
+            "seed": 206369,
+            "mean": 2.402000035792589,
+            "median_episode_score": 2.7000000402331352,
+            "episodes": 100
+          }
+        ],
+        "mean": 1.100840016465634,
+        "median": 0.7344000110961497,
+        "sample_sd": 1.1304474361848889,
+        "min": 0.04080000068992376,
+        "max": 2.402000035792589,
+        "seeds_at_least_0_5": 3,
+        "seeds_beating_random": 5
+      },
+      "td3_layernorm": {
+        "per_seed": [
+          {
+            "seed": 104729,
+            "mean": 2.5490000379830597,
+            "median_episode_score": 2.600000038743019,
+            "episodes": 100
+          },
+          {
+            "seed": 130363,
+            "mean": 0.5432000081241131,
+            "median_episode_score": 0.10000000149011612,
+            "episodes": 100
+          },
+          {
+            "seed": 155921,
+            "mean": 0.03720000060275197,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 181081,
+            "mean": 0.08400000128895044,
+            "median_episode_score": 0.10000000149011612,
+            "episodes": 100
+          },
+          {
+            "seed": 206369,
+            "mean": 0.0,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          }
+        ],
+        "mean": 0.642680009599775,
+        "median": 0.08400000128895044,
+        "sample_sd": 1.0880853952044884,
+        "min": 0.0,
+        "max": 2.5490000379830597,
+        "seeds_at_least_0_5": 2,
+        "seeds_beating_random": 4
+      },
+      "random": {
+        "per_seed": [
+          {
+            "seed": 104729,
+            "mean": 0.015500000268220902,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 130363,
+            "mean": 0.019500000309199093,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 155921,
+            "mean": 0.024000000413507222,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 181081,
+            "mean": 0.01240000020712614,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 206369,
+            "mean": 0.02350000036880374,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          }
+        ],
+        "mean": 0.01898000031337142,
+        "median": 0.019500000309199093,
+        "sample_sd": 0.005032593844494306,
+        "min": 0.01240000020712614,
+        "max": 0.024000000413507222,
+        "seeds_at_least_0_5": 0
+      },
+      "zero": {
+        "per_seed": [
+          {
+            "seed": 104729,
+            "mean": 0.001900000050663948,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 130363,
+            "mean": 0.007500000223517418,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 155921,
+            "mean": 0.002800000086426735,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 181081,
+            "mean": 0.001900000050663948,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          },
+          {
+            "seed": 206369,
+            "mean": 0.003800000101327896,
+            "median_episode_score": 0.0,
+            "episodes": 100
+          }
+        ],
+        "mean": 0.003580000102519989,
+        "median": 0.002800000086426735,
+        "sample_sd": 0.0023274450219969434,
+        "min": 0.001900000050663948,
+        "max": 0.007500000223517418,
+        "seeds_at_least_0_5": 0
+      }
+    },
+    "unit_of_replication": "five independent trained policies per method, not the nested test episodes",
+    "interpretation": "descriptive bounded comparison of complete pipelines; equal interactions do not equalize wall time or gradient compute"
   },
-  "scope": "Presentation refresh of existing published results. No new training, FID, physics or benchmark measurement."
+  "braking_at_speed_v2": {
+    "executions": 66,
+    "conditions": 11,
+    "physics_seeds": [
+      101,
+      202,
+      303
+    ],
+    "policies": 2,
+    "pass_per_policy": 27,
+    "runs_per_policy": 33,
+    "contacts_per_policy": 6,
+    "audit_rows": 22416,
+    "units": "signed collision-hull clearance, metres",
+    "limits": "scripted kinematic targets, software sensor faults and friction parameters; deterministic seed repeats can match exactly"
+  }
 }
