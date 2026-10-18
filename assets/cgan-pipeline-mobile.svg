@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="680" viewBox="0 0 460 680" role="img" aria-labelledby="title desc"><title id="title">MLP cGAN training and evaluation</title><desc id="desc">A three-stage protocol: train an MLP cGAN for fifty epochs, generate labeled samples, then train a separate classifier and test on real MNIST.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#796b80" stroke-width="1.4"/></marker></defs><rect width="460" height="680" fill="#f7f3ed"/>
+<rect x="24" y="28" width="412" height="176" rx="2" fill="#fcfaf6" stroke="#d8d0da"/><text x="42" y="60" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#332b3b">01 / Train the cGAN</text>
+<text x="42" y="92" font-family="Arial,sans-serif" font-size="18" fill="#504456">MNIST training split</text>
+<text x="42" y="120" font-family="Arial,sans-serif" font-size="18" fill="#504456">50 epochs · seeds 101 / 202 / 303</text>
+<text x="42" y="148" font-family="Arial,sans-serif" font-size="18" fill="#504456">G: 110 → 128 → 256 → 512 → 784</text>
+<text x="42" y="176" font-family="Arial,sans-serif" font-size="18" fill="#504456">D: 794 → 512 → 256 → 1</text>
+<path d="M230 213V238" fill="none" stroke="#796b80" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="24" y="246" width="412" height="176" rx="2" fill="#fcfaf6" stroke="#d8d0da"/><text x="42" y="278" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#332b3b">02 / Generate labeled digits</text>
+<text x="42" y="310" font-family="Arial,sans-serif" font-size="18" fill="#504456">Freeze the generator checkpoint</text>
+<text x="42" y="338" font-family="Arial,sans-serif" font-size="18" fill="#504456">100 noise values + class embedding</text>
+<text x="42" y="366" font-family="Arial,sans-serif" font-size="18" fill="#504456">10,000 synthetic images</text>
+<text x="42" y="394" font-family="Arial,sans-serif" font-size="18" fill="#504456">1 × 28 × 28 pixels per image</text>
+<path d="M230 431V456" fill="none" stroke="#796b80" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="24" y="464" width="412" height="176" rx="2" fill="#fcfaf6" stroke="#d8d0da"/><text x="42" y="496" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#332b3b">03 / Evaluate sample utility</text>
+<text x="42" y="528" font-family="Arial,sans-serif" font-size="18" fill="#504456">Fresh CNN · 20 epochs per pipeline</text>
+<text x="42" y="556" font-family="Arial,sans-serif" font-size="18" fill="#504456">Train only on synthetic images</text>
+<text x="42" y="584" font-family="Arial,sans-serif" font-size="18" fill="#504456">Evaluate 10,000 real test images</text>
+<text x="42" y="612" font-family="Arial,sans-serif" font-size="18" fill="#b44b34">Report every pipeline seed</text>
+</svg>

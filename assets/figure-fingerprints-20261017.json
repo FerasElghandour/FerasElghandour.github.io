@@ -1,0 +1,38 @@
+[
+  {
+    "asset": "capacity-followup.png",
+    "source": "https://github.com/FerasElghandour/recursive-network-capacity-study/blob/aab76bfeb9a42eab6312d5c3f008c4d41a56029a/results/followup-v1/paired-effects.png",
+    "sha256": "4f64d6e70efd6a8c22d9e9e25805dc997255f301ca43ccefc28ca88ff98bbd8d",
+    "copied_without_modification": true
+  },
+  {
+    "asset": "generative-paired.png",
+    "source": "https://github.com/FerasElghandour/conditional-handwriting-generation/blob/df3e83573328ac64f9b97ffea683a1939eb8e778/results/comparison-v1/paired-results.png",
+    "sha256": "98cf6a5b19c5407f25a50de529612c76ec07fccaea4fb1402270823565b8e68e",
+    "copied_without_modification": true
+  },
+  {
+    "asset": "cgan-101.png",
+    "source": "https://github.com/FerasElghandour/conditional-handwriting-generation/blob/df3e83573328ac64f9b97ffea683a1939eb8e778/results/comparison-v1/cgan-101/grid.png",
+    "sha256": "548cd4b05f7b31dc252e51207373067e25122922244548bcb0553a017b8349c8",
+    "copied_without_modification": true
+  },
+  {
+    "asset": "ddpm-101.png",
+    "source": "https://github.com/FerasElghandour/conditional-handwriting-generation/blob/df3e83573328ac64f9b97ffea683a1939eb8e778/results/comparison-v1/diffusion-101/grid.png",
+    "sha256": "a615fa86d0243c3569131e9b749f61c14688c408c5ae2be720fd44289a58a67a",
+    "copied_without_modification": true
+  },
+  {
+    "asset": "tennis-fresh.png",
+    "source": "https://github.com/FerasElghandour/tennis-reinforcement-learning/blob/560695353c5faa20225ec81ccf2f8aee1d931085/results/fresh-v1/training-and-test.png",
+    "sha256": "eb9fa0b7e661b69bbc4ac16f793cee9e663d329eb4593436a5be135d94a0fdf8",
+    "copied_without_modification": true
+  },
+  {
+    "asset": "braking-physics.png",
+    "source": "https://github.com/FerasElghandour/autonomous-braking-simulation/blob/80d0b38943ed502d697479142b521aaef65ad685/results/webots-physics-v1/stopping-distances.png",
+    "sha256": "28e26cbe5577af8e6f60588ec018fe321b56620293927a2eb62f2ef1b33bb8a5",
+    "copied_without_modification": true
+  }
+]
